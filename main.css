@@ -1,131 +1,197 @@
-.navbar{ background:#009999;}
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
-.nav-link{ margin-right: 1em !important;}
-.nav-link:hover{ background: #f4f4f4; color: #009999; }
-.navbar-collapse{ justify-content: flex-end;}
-.navbar-toggler{  background:#fff !important;}
-.navbar-collapse{
+.navbar {
+    background: #009999;
+}
+
+.nav-link, .navbar-brand {
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+}
+
+.nav-link:hover {
+    background: #f4f4f4;
+    color: #009999;
+}
+
+.navbar-collapse {
     justify-content: flex-end;
-   }
-.bg-dark{background-color:#343a40!important}
-.bg-primary{background-color:#007bff!important}
+}
+
+.navbar-toggler {
+    background: #fff !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+button.navbar-toggler {
+    min-width: 75px;
+}
+span.navbar-toggler-icon {
+    font-size:10pt;
+}
+
+.bg-dark {
+    background-color: #343a40!important
+}
+
+.bg-primary {
+    background-color: #007bff!important
+}
+
 /*header style*/
-.header{
-/*!--background-image: url('../images/headerback.jpg');*/
+
+.header {
+    /*!--background-image: url('../images/headerback.jpg');*/
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 75px;
-   }
-   .overlay{
+}
+
+.overlay {
     position: absolute;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
     /*background: rgba(244, 244, 244, 0.79);*/
-    background:#e6e6e6
-   }
-   .row-margin
-   {
+    background: #e6e6e6
+}
+
+.row-margin {
     position: relative;
-    top: 100px;
+    top: 30px;
     margin: auto;
-   }
-   .description{
+}
+
+.description {
     /*position: absolute;*/
     /*top: 30%;
     margin: auto;*/
     padding: 2em;
 }
-.description h1{
-color:#009999;
-line-height: 300%;
-}
-.description h2{
-    color:#009999;
+
+.description h1 {
+    color: #009999;
     line-height: 300%;
-    }
+    font-size: 2.2rem;
+}
 
-.description h5{
-    color:#009999;
-  
-    }
+.description h2 {
+    color: #009999;
+    line-height: 300%;
+}
 
-.description p{
- color:#666;
- font-size: 20px;
- /*width: 50%;
+.description h5 {
+    color: #009999;
+}
+
+.description p {
+    color: #666;
+    font-size: 20px;
+    /*width: 50%;
  line-height: 1.5;*/
 }
-.description button{
- /*border:1px  solid #F97300;*/
- border:1px  solid #009999;
- /*background:#F97300;*/
- background: #009999;
- color:#fff;
+
+.description button {
+    /*border:1px  solid #F97300;*/
+    border: 1px solid #009999;
+    /*background:#F97300;*/
+    background: #009999;
+    color: #fff;
 }
-.column-color
-{
+
+.column-color {
     background-color: #ffffff;
     padding: 10px 5px 5px 25px;
 }
 
 /*Contact CSS*/
 
-.contact-form{
+.contact-form {
     margin: 6em 0;
-    position: relative;  
-   }
-   .contact-form h1{
-    padding:2em 1px;
-    color: #009999; 
-   }
-   .contact-form .right{
+    position: relative;
+}
+
+.contact-form h1 {
+    padding: 2em 1px;
+    color: #009999;
+}
+
+.contact-form .right {
     max-width: 600px;
-   }
-   .contact-form .right .btn-secondary{
-    background:  #009999;
+}
+
+.contact-form .right .btn-secondary {
+    background: #009999;
     color: #fff;
-    border:0;
-   }
-   .contact-form .right .form-control::placeholder{
+    border: 0;
+}
+
+.contact-form .right .form-control::placeholder {
     color: #888;
     font-size: 16px;
-   }
+}
 
-   .column-heading
-   {
-       color: #009999;
-   }
+.column-heading {
+    color: #009999;
+}
 
-   .table td:nth-child(5)
-   {
-        text-align: left;
-   }
+.table td:nth-child(5) {
+    text-align: left;
+}
 
-   .midgrid
-   {
-       background-color: #fff;
-   }
-   .table-h1
-   {
-       color: #009999;
-       line-height: 200%;
-   }
-   .small-p
-   {
-       font-size: small;
-   }
+.midgrid {
+    background-color: #fff;
+}
 
-   .container-comparison
-   {
-       background-color: #fff;
-   }
+.table-h1 {
+    color: #009999;
+    line-height: 200%;
+}
 
+.small-p {
+    font-size: small;
+}
 
-   .comparison-h1
-   {
-       color: #009999;
-       line-height: 200%;
-   }
+.container-comparison {
+    background-color: #fff;
+}
+
+.comparison-h1 {
+    color: #009999;
+    line-height: 200%;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 1.9rem !important;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.2rem !important;
+    }
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 2.4rem !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 2.6rem !important;
+    }
+}

@@ -1,128 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head >
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<!-- Optional JavaScript -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src='js/main.js'></script>
     <title>Latitude Analysis</title>
-  </head>
-  <body>   
+</head>
+
+<body>
     <div class="overlay">
-    <div class="container-fluid">
-    <header class="header">
-        <!-- navbar -->  
-        <nav class="navbar navbar-expand-lg fixed-top primary ">  
-        <a class="navbar-brand nav-link" href="index.html">Latitude</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
-        <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse " id="navbarSupportedContent">     
-        <ul class="navbar-nav mr-4">
-        
-            <li class="nav-item">
-                <div class="dropdown show">
-                <a class=" dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" 
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plot</a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
-                    <a class="dropdown-item" href="humidity.html">Humidity</a>
-                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                    <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+        <div class="container-fluid">
+            <header class="header">
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg fixed-top primary ">
+                    <a class="navbar-brand nav-link" href="index.html">Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">Menu</span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-4">
+
+                            <li class="nav-item">
+                                <div class="dropdown show">
+                                    <a class=" dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plot</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+                                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                        <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="comparison" href="comparison.html">Comparison</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-value="data" href="data.html">Data</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="row row-margin">
+                <div class="col-12 col-md-8 description">
+                    <div class="column-color ">
+                        <h1>Summary: Latitude vs. X</h1>
+                        <img src="latitudeVsTemp.png" class="rounded float-left" alt="latitude vs. cloudiness">
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the
+                            equator. To accomplish this analysis, we first pulled data from the
+                            OpenWeather API to assemble a dataset on over 500 cities.
+                        </p>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                            latitude. Factors we looked at included: temperature, cloudiness,
+                            wind speed, and humidity. This site provides the source data and visualizations created as
+                            part of the analysis, as well as explanations and descriptions of
+                            any trends and correlations witnessed.
+                        </p>
+                    </div>
                 </div>
-                </div>   
-            </li>
-          
-            <li class="nav-item">
-                <a class="nav-link " data-value="comparison" href="comparison.html">Comparison</a>    
-            </li> 
-            <li class="nav-item"> 
-                <a class="nav-link " data-value="data" href="data.html">Data</a>       
-            </li> 
-       </ul> 
-       </div>
-        </nav>
-    </header>
-
-    <div class="row row-margin">
-        <div class="col-12 col-md-8 description">
-            <div class="column-color ">
-                <h1>Summary: Latitude vs. X</h1>
-                <img src="latitudeVsTemp.png" class="rounded float-left" alt= "latitude vs. cloudiness">
-                 <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the
-                    OpenWeather API to assemble a dataset on over 500 cities.
-                </p>
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness,
-                    wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of 
-                    any trends and correlations witnessed.
-                </p>   
-             </div>
-            </div>
 
 
-        <div class="col-12 col-md-4 description">
-            <div class="column-color ">
-            <h2>Visualization</h2>
+                <div class="col-12 col-md-4 description">
+                    <div class="column-color ">
+                        <h2>Visualization</h2>
 
-            
-                
-                <div class="row">
-                    
-                        <div class="col-12 col-md-6">
-                                <h5>Max Temperature</h5>
+
+
+                        <div class="row">
+
+                            <div class="col-12 col-md-6">
+                                <h5>Max Temp</h5>
                                 <a href="MaxTemp.html">
-                                <img src="latitudeVsTemp.png" class="img-thumbnail" alt= "latitudevscloudiness">
+                                    <img src="latitudeVsTemp.png" class="img-thumbnail" alt="latitudevscloudiness">
                                 </a>
-                        </div>
-                                
-                        <div class="col-12 col-md-6">      
-                             
+                            </div>
+
+                            <div class="col-12 col-md-6">
+
                                 <h5>Humidity</h5>
                                 <a href="humidity.html">
-                                <img src="latitudeVsHumidity.png" class="img-thumbnail" alt= "latitudeVsHumidity">
+                                    <img src="latitudeVsHumidity.png" class="img-thumbnail" alt="latitudeVsHumidity">
                                 </a>
-                        </div>
+                            </div>
 
 
-                        <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6">
                                 <h5>Cloudiness</h5>
                                 <a href="cloudiness.html">
-                                <img src="latitudeVsCloudiness.png" class="img-thumbnail" alt= "latitudevscloudiness">    
+                                    <img src="latitudeVsCloudiness.png" class="img-thumbnail" alt="latitudevscloudiness">
                                 </a>
-                        </div>
+                            </div>
 
 
-                        <div class="col-12 col-md-6"> 
+                            <div class="col-12 col-md-6">
                                 <h5>Wind Speed</h5>
                                 <a href="windSpeed.html">
-                                <img src="latitudeVsWindSpeed.png" class="img-thumbnail" alt= "latitudevscloudiness">
+                                    <img src="latitudeVsWindSpeed.png" class="img-thumbnail" alt="latitudevscloudiness">
                                 </a>
+                            </div>
+
                         </div>
-                    
+
+
+
+
+                    </div>
                 </div>
-                
-
-
-
             </div>
+
+
+
+
+
+
         </div>
+        <!--container-->
     </div>
+    <!--overlay-->
+</body>
 
-
-      
-   
-  
-
-    </div><!--container-->
-    </div><!--overlay-->
-  </body>
 </html>
